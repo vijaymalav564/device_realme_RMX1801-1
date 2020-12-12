@@ -468,3 +468,7 @@ PRODUCT_HOST_PACKAGES += \
 # WFD
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Recorder
+PRODUCT_PACKAGES += \
+    OPScreenRecorder
