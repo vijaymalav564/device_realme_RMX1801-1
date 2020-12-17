@@ -2,3 +2,7 @@ allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file rw_file_perms;
 
 binder_call(system_app, wificond)
+
+# Allow theme_prop to be read and set by Settings
+get_prop(system_app, theme_prop)
+set_prop(system_app, theme_prop)

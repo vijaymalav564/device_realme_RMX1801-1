@@ -9,3 +9,5 @@ dontaudit priv_app firmware_file:filesystem getattr;
 dontaudit priv_app mnt_vendor_file:dir search;
 
 binder_call(priv_app, hal_memtrack_default)
+
+get_prop(priv_app, theme_prop)
