@@ -132,3 +132,8 @@ persist.vendor.delta_time.enable=true
 # Fling
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
+
+# Sensors
+ro.vendor.sensors.facing=false
+ro.vendor.sensors.cmc=false
+ro.vendor.sdk.sensors.gestures=false
