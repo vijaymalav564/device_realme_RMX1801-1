@@ -126,6 +126,10 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109339
 
+# Bluetooth (aptX) - # redfin-user-11-RD1A.201105.003.A1-6886512-release-keys
+system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e 
+system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
 # Camera
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libbase64.so
@@ -3232,8 +3236,8 @@ vendor/lib64/vendor.oppo.hardware.radio.oppoappradio@1.0.so
 vendor/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so
 
 # QRTR - from jasmine V11.0.21.0.QDIMIXM
-vendor/bin/qrtr-cfg|f2433cbff23c57f531882a70e33e066f9f02d919 
-vendor/bin/qrtr-lookup|54e4244db1166ee9ebc92218b3214eedaee9b42d 
+vendor/bin/qrtr-cfg|f2433cbff23c57f531882a70e33e066f9f02d919
+vendor/bin/qrtr-lookup|54e4244db1166ee9ebc92218b3214eedaee9b42d
 vendor/bin/qrtr-ns|90a5a0c488b09fed69e4f402eb30d0c22340fcba
 vendor/lib64/libqrtr.so|9addbb504885bb2a82e0b19e38077742bc48c10f
 
