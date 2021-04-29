@@ -34,8 +34,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp \
-    $(LOCAL_PATH)/overlay-aosp/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-aosp
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/realme/RMX1801
@@ -175,8 +174,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
     libstdc++.vendor \
-    Snap \
     vendor.qti.hardware.camera.device@1.0
+
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
