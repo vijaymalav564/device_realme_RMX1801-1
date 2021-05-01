@@ -124,3 +124,7 @@ debug.sf.enable_hwc_vds=1
 
 # Time-Service
 persist.vendor.delta_time.enable=true
+
+# Fling
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
