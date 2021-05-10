@@ -3101,6 +3101,9 @@ vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
+# Radio - from LA.UM.9.6.2.r1-04100-89xx.0
+system_ext/framework/qti-telephony-common.jar|8c99640be5b9b9ee886bfc450b6923a33eb2fd8b
+
 # QMI
 etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
