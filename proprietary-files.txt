@@ -3205,6 +3205,9 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161c
 # Radio - IMS - from mojito
 vendor/lib64/lib-imsvtcore.so|47d945bf976134fdb57b4f44dd73a1347f2bf421
 
+# Radio - from mojito
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
+
 # Radio - from jasmine-user 10 QKQ1.190910.002 V11.0.11.0.QDIMIXM release-keys
 -product/app/QtiTelephonyService/QtiTelephonyService.apk|db60b6fe27b3033f6468b3170b23af18dd0bcdaf
 -product/app/datastatusnotification/datastatusnotification.apk|272156d88ac5a05f76fcea7f1a31087e1acbcd85
