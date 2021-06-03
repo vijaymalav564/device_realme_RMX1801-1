@@ -483,3 +483,7 @@ PRODUCT_PACKAGES += \
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     GCamGo
+
+# Gallery
+PRODUCT_PACKAGES += \
+    SonyAlbum
