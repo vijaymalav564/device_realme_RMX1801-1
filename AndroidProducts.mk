@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_RMX1801.mk
+    $(LOCAL_DIR)/carbon_RMX1801.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_RMX1801-user \
-    ssos_RMX1801-userdebug \
-    ssos_RMX1801-eng
+    carbon_RMX1801-user \
+    carbon_RMX1801-userdebug \
+    carbon_RMX1801-eng
