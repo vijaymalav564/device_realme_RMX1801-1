@@ -168,10 +168,12 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
+    android.hardware.camera.device@3.4:64 \
     android.hardware.camera.device@3.5:64 \
-    android.hardware.camera.provider@2.6:64 \
+    android.hardware.camera.provider@2.4:64 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.5:64 \
     libstdc++.vendor \
     Snap \
     vendor.qti.hardware.camera.device@1.0:64
@@ -311,9 +313,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw \
-    libavservices_minijail \
-    libavservices_minijail.vendor
+    libstagefrighthw
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
