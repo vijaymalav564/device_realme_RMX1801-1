@@ -491,7 +491,3 @@ PRODUCT_PACKAGES += \
 # Gallery
 PRODUCT_PACKAGES += \
     SonyAlbum
-
-# Music
-PRODUCT_PACKAGES += \
-    SonyMusicPlayer
