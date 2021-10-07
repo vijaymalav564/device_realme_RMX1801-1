@@ -37,7 +37,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/realme/RMX1801
+PRODUCT_SOONG_NAMESPACES += \
+    device/realme/RMX1801 \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # R HALs
 OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-r
