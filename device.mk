@@ -510,10 +510,6 @@ PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_HOST_PACKAGES += \
     signapk
 
-# WFD
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Recorder
 PRODUCT_PACKAGES += \
     OPScreenRecorder
