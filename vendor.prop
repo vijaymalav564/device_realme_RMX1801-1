@@ -62,6 +62,23 @@ dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 
+# Display
+persist.demo.hdmirotationlock=false
+persist.sys.sf.color_saturation=1.0
+sdm.debug.disable_skip_validate=1
+vendor.display.disable_skip_validate=1
+vendor.display.enable_default_color_mode=1
+vendor.gralloc.enable_fb_ubwc=1
+vendor.vidc.enc.disable_bframes=1
+vendor.vidc.enc.disable.pq=false
+vendor.vidc.dec.enable.downscalar=0
+vidc.enc.target_support_bframe=1
+debug.sf.recomputecrop=0
+vendor.display.disable_rotator_downscale=1
+vendor.display.disable_scaler=0
+debug.hwui.renderer=skiagl
+debug.hwui.use_buffer_age=false
+
 # DRM
 drm.service.enabled=true
 
