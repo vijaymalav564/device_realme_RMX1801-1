@@ -91,10 +91,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# Charger
-PRODUCT_PACKAGES += \
-    product_charger_res_images
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
