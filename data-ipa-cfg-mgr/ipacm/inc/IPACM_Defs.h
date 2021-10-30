@@ -97,17 +97,18 @@ extern "C"
 #define IPA_DEVICE_NAME "/dev/ipa"
 #define MAX_NUM_PROP 2
 
-#ifndef FEATURE_IPA_V3
-#define IPA_MAX_FLT_RULE 50
-#else
 #define IPA_MAX_FLT_RULE 100
-#endif
 
 #define TCP_FIN_SHIFT 16
 #define TCP_SYN_SHIFT 17
 #define TCP_RST_SHIFT 18
 #define NUM_IPV6_PREFIX_FLT_RULE 1
 #define NUM_IPV6_PREFIX_MTU_RULE 1
+
+#define MAX_CONNTRACK_ENTRIES 100
+#define CT_ENTRIES_BUFFER_SIZE 8096
+#define LOOPBACK_MASK 0xFF000000
+#define LOOPBACK_ADDR 0x7F000000
 
 /*---------------------------------------------------------------------------
 										Return values indicating error status
@@ -192,6 +193,10 @@ typedef enum
 	IPA_ETH_BRIDGE_WLAN_SCC_MCC_SWITCH,       /* ipacm_event_eth_bridge*/
 	IPA_SSR_NOTICE,                           /* NULL*/
 	IPA_COALESCE_NOTICE,                      /* NULL*/
+#ifdef IPA_MTU_EVENT_MAX
+	IPA_MTU_SET,                              /* ipa_mtu_info */
+	IPA_MTU_UPDATE,                           /* ipacm_event_mtu_info */
+#endif
 #ifdef FEATURE_L2TP
 	IPA_ADD_VLAN_IFACE,                       /* ipa_ioc_vlan_iface_info */
 	IPA_DEL_VLAN_IFACE,                       /* ipa_ioc_vlan_iface_info */
@@ -406,4 +411,11 @@ typedef struct {
 	_ipacm_offload_prefix prefix;
 } ipacm_event_ipahal_stream;
 
+#ifdef IPA_MTU_EVENT_MAX
+typedef struct _ipacm_event_mtu_info
+{
+	int if_index;
+	ipa_mtu_info mtu_info;
+} ipacm_event_mtu_info;
+#endif
 #endif /* IPA_CM_DEFS_H */
