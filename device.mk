@@ -504,7 +504,3 @@ PRODUCT_HOST_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     OPScreenRecorder
-
-# Prebuilt Packages
-PRODUCT_PACKAGES += \
-    GCamGo
